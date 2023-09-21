@@ -134,10 +134,18 @@ font-size: 4vh;
     animation-duration: 1.5s;
 }
 .vakken-item img{
+    border: 3vh;
+    border-radius: 3vh;
+    margin-top: 5vh;
     width: 40vw;
     max-height: 40vw;
+    background-color: var(--main-color);
+}
+.spec{
+    width: 25vw !important;
 }
 .text{
+    margin-top: 5vh;
     background-color: var(--main-color);
     border: 0.4vh;
     border-radius: 3vh;
@@ -163,14 +171,17 @@ font-size: 4vh;
   }
 .grid-container-1{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-gap: 10px;
     grid-auto-flow: dense;
     margin-left: 1vw;
     margin-right: 15vw;
+    margin: 0 auto;
 }
 .grid-container-1 img{
-    width: 20vw;
+    border-radius: 4vh;
+    padding: 2vh;
+    width: 15vw;
     background-color: var(--main-color);
 }
 .grid-container-2{
@@ -179,15 +190,20 @@ font-size: 4vh;
     grid-gap: 10px;
     grid-auto-flow: dense;
     padding: 3vh;
+    margin: 0 auto;
 }
 .grid-item1{
+    text-align: center;
     margin: 0.2vw;
     background-color: var(--main-color);
     border: 0.5vh;
-    border-radius: 1vh;
+    border-radius: 5vh;
     border-color: black;
     border-style: solid;
     padding: 1vh;
+}
+.name{
+    font-size: 3vh;
 }
 .grid-item1 p{
     background-color: var(--main-color);
@@ -199,6 +215,14 @@ font-size: 4vh;
 }
 .grid-item-2 h2{
     margin-bottom: 4vh;
+}
+.grid-item-2 img{
+    width: 70vw;
+    margin:  0 auto;
+}
+.big{
+    text-align: center;
+    grid-column: span 2; 
 }
 footer{
     border: solid 0.2vh;
@@ -234,14 +258,16 @@ footer p{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-gap: 15px;
-        grid-auto-flow: dense
+    }
+    .spec{
+        width: 70vw !important;
     }
     .grid-container-2{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         grid-gap: 10px;
         grid-auto-flow: dense;
-        margin: 12vw;
+
         padding: 3vh;
     }
     .vakken-item{
@@ -251,7 +277,7 @@ footer p{
     .vakken-item img{
         width: 70vw;
         max-height: 70vw;
-        margin: 12vw;
+        margin: 0 auto
     }
     .text{
         margin: 12vw;
