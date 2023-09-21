@@ -31,7 +31,9 @@ header img{
     margin-top: 3vh;
     margin-bottom: 3vh;
 }
-
+.hidden{
+    display: none !important;
+}
 nav a{
     background-color: var(--main-color);
     padding: 0vh 3vw;
@@ -58,7 +60,7 @@ nav{
 }
 .Home-item h1{
 margin-top: 7vw;
-font-size: 4vh;
+font-size: 8vh;
 }
 .Home-item img{
     width: 50vw;
@@ -282,5 +284,10 @@ footer p{
     .text{
         margin: 12vw;
         width: 70vw;
+    }
+    .big img{
+        border: 3vh;
+        border-radius: 5vh;
+        width: 90vw;
     }
 }
