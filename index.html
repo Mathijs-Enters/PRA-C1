@@ -8,11 +8,11 @@
 </head>
 <body>
     <header>
-            <img src="img/curio-01-zwart-logo-rgb.png" alt="">
+            <img src="img/curio-01-zwart-logo-rgb.png" alt="img" onclick="currentSlide(1)">
             <nav>
-                    <a href="#Vakken">Vakken</a>
-                    <a href="#Docenten">Docenten</a>
-                    <a href="#Sfeer">De sfeer</a>  
+                <a href="#Vakken">Vakken</a>
+                <a href="#Docenten">Docenten</a>
+                <a href="#Sfeer">Sfeer</a>
             </nav>
 
     </header>
@@ -20,7 +20,9 @@
         <div class="Home">
                 <div class="Home-item">
                     <h1>Software Developer</h1>
+                    <div>
                     <h2>Minigame</h2>
+                </div>
                 </div>
                 <div class="Home-item">
                     <img src="img/Sanne Bas - Curio - Terheijdenseweg 350-2.jpg" alt="img">
@@ -29,50 +31,70 @@
 
 
         <div class="Vakken" id="Vakken">
+            <div class="title">
+                <h1>Vakken</h1>
+            </div>
             <div class="vakken-container">
-              <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-              </div>
-                <div class="vakken-item fade">
-                  <p>test</p>
+                <div class="slide-nav">
+                    <p onclick="currentSlide(1)">Native</p>
+                    <p onclick="currentSlide(2)">Web</p>
+                    <p onclick="currentSlide(3)">Pra</p>
+                    <p onclick="currentSlide(4)">Pro</p>
+                    <p onclick="currentSlide(5)">Generieke </p>
+                    <p onclick="currentSlide(6)">SLB</p>
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
                 </div>
                 <div class="vakken-item fade">
-                  <div class="text">Caption Two</div>
+                    <img src="img/Placeholder.svg.png" alt="img">
+                    <div class="text">
+                        <h2>Native</h2>
+                        <p>Dit vak richt zich op het ontwikkelen van native applicaties voor verschillende platforms. Je krijgt de kans om te werken met programmeertalen zoals Python en C#.</p>
+                    </div>
                 </div>
                 <div class="vakken-item fade">
-                  <div class="text">Caption Three</div>
-              <br>
+                    <img src="img/Placeholder.svg.png" alt="img">
+                    <div class="text">
+                        <h2>Web</h2>
+                        <p>Tijdens dit vak maak je kennis met de wereld van webontwikkeling. Je leert hoe je websites ontwerpt en bouwt, en krijgt inzicht in HTML, CSS en PHP.</p>
+                    </div>
+                </div>
+                <div class="vakken-item fade">
+                    <img src="img/Placeholder.svg.png" alt="img">
+                    <div class="text">
+                        <h2>Pra</h2>
+                        <p>In de praktijkvakken pas je de kennis en vaardigheden toe die je in andere vakken hebt opgedaan. Je werkt aan projecten, lost problemen op en past theoretische concepten toe in de praktijk.</p>
+                    </div>
+                </div>
+                <div class="vakken-item fade">
+                    <img src="img/Placeholder.svg.png" alt="img">
+                    <div class="text">
+                        <h2>Pro</h2>
+                        <p>Bij het vak PRO leer je alles rondom het programmeren, zo leer je bijvoorbeeld de "Agile" of "Scrum" methode, hoe je goed samenwerkt in teams en de basisvaardigheden zoals GitHub.</p>
+                    </div>
+                </div>
+                <div class="vakken-item fade">
+                    <img src="img/Placeholder.svg.png" alt="img">
+                    <div class="text">
+                        <h2>Generieke </h2>
+                        <p>vakken als Nederlands, Engels, wiskunde, maatschappijleer en loopbaanbegeleiding. Het doel van deze vakken is om studenten een solide basis te geven in communicatie, rekenen, maatschappelijk bewustzijn en persoonlijke ontwikkeling.</p>
+                    </div>
+                </div>
+                <div class="vakken-item fade">
+                    <img src="img/Placeholder.svg.png" alt="img">
+                    <div class="text">
+                        <h2>SLB</h2>
+                        <p>SLB staat voor Studieloopbaanbegeleiding. Het is een begeleidingsvorm die studenten ondersteunt bij hun studievoortgang en persoonlijke ontwikkeling. SLB richt zich op het helpen van studenten bij het maken van keuzes binnen hun opleiding</p>
+                    </div>
+                </div>
+                <br>
         </div>
-<Script>
-    let slideIndex = 1;
-        showSlides(slideIndex);
-
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-    function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("vakken-item");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    }
-</Script>
-
 
         <div class="Docenten" id="Docenten">
 
@@ -115,20 +137,16 @@
             </div>
 
             <div class="grid-container-2">
-                <div class="grid-item">
-                    <h2>Werken in Groepen</h2>
-                    <p>bla bla bla</p>
+                <div class="grid-item-2">
+                    <h2>samenwerken in Groepen</h2>
+                    <p>Tijdens je opleiding tot software developer werk je frequent in teamverband. Je leert hoe je projecten organiseert om applicaties te ontwikkelen. Je leert hier goed samenwerking in een teamverband en hoe je jezelf kunt presenteren.</p>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item-2">
                     <h2>De lessen</h2>
                     <p>bla bla bla</p>
                 </div>
-                <div class="grid-item">
+                <div class="grid-item-2">
                     <h2>Huiswerk</h2>
-                    <p>bla bla bla</p>
-                </div>
-                <div class="grid-item">
-                    <h2>Mijn ervaaring</h2>
                     <p>bla bla bla</p>
                 </div>
             </div>
@@ -141,4 +159,33 @@
     </footer>
     
 </body>
+
+
+<Script>
+    let slideIndex = 1;
+        showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("vakken-item");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "flex";
+    dots[slideIndex-1].className += " active";
+    }
+</Script>
 </html>
