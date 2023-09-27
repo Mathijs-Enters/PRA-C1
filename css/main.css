@@ -217,10 +217,14 @@ font-size: 8vh;
 }
 .grid-item-2 h2{
     margin-bottom: 4vh;
+    font-size: 3.5vh;
 }
 .grid-item-2 img{
     width: 70vw;
     margin:  0 auto;
+}
+.grid-item-2 p{
+    font-size: 2.5vw;
 }
 .big{
     text-align: center;
